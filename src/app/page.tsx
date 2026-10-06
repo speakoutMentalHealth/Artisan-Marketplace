@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { categories, naira, professionals } from "@/lib/demo-data";
+import { naira, professionals } from "@/lib/demo-data";\nimport { getServiceCategories } from "@/lib/data/categories";
 
 export default function HomePage() {
   return (
@@ -124,8 +124,8 @@ export default function HomePage() {
         <Link href="/">Home</Link>
         <Link href="/explore">Explore</Link>
         <Link className="mobilePrimary" href="/post-job">＋</Link>
-        <Link href="/professional/dashboard">Jobs</Link>
-        <Link href="/admin">Account</Link>
+        <Link href="/professional/apply">Work</Link>
+        <Link href="/account">Account</Link>
       </nav>
     </>
   );
