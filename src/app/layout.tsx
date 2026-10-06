@@ -40,7 +40,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             </div>
             <div>
               <strong>Professionals</strong>
-              <Link href="/professional/dashboard">Professional dashboard</Link>
+              <Link href="/professional/apply">Professional onboarding</Link>
               <span>Verification</span>
             </div>
           </div>
