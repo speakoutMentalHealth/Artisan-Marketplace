@@ -1,7 +1,10 @@
 import Link from "next/link";
-import { naira, professionals } from "@/lib/demo-data";\nimport { getServiceCategories } from "@/lib/data/categories";
+import { naira, professionals } from "@/lib/demo-data";
+import { getServiceCategories } from "@/lib/data/categories";
 
-export default function ExplorePage() {
+export default async function ExplorePage() {
+  const categories = await getServiceCategories();
+
   return (
     <div className="shell page">
       <div className="pageHeading">
