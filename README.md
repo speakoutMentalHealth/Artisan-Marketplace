@@ -10,7 +10,7 @@ A location-based marketplace for discovering, verifying, hiring and reviewing sk
 - Post-a-job experience
 - Professional dashboard and nearby job opportunities
 - Admin verification queue
-- Supabase/Postgres schema for profiles, professionals, services, jobs, quotes, bookings, payments, reviews, disputes and audit logs
+- Supabase/Postgres schema for profiles, professionals, services, jobs, quotes, bookings, payments, reviews, disputes and audit logs\n- Supabase SSR authentication with customer/professional role onboarding\n- Protected account, professional and admin routes\n- Real professional application submission and authenticated job creation
 - Row Level Security starter policies
 - PostGIS-backed nearby-professional query
 - Responsive mobile navigation and desktop admin layouts
