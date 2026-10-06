@@ -1,7 +1,10 @@
 import Link from "next/link";
-import { naira, professionals } from "@/lib/demo-data";\nimport { getServiceCategories } from "@/lib/data/categories";
+import { naira, professionals } from "@/lib/demo-data";
+import { getServiceCategories } from "@/lib/data/categories";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const categories = await getServiceCategories();
+
   return (
     <>
       <section className="hero">
