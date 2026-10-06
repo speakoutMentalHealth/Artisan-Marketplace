@@ -7,9 +7,9 @@ export const dynamic = "force-dynamic";
 export default async function AccountPage({
   searchParams,
 }: {
-  searchParams: Promise<{ error?: string }>;
+  searchParams: Promise<{ error?: string; job_posted?: string }>;
 }) {
-  const { error } = await searchParams;
+  const { error, job_posted } = await searchParams;
   const { supabase, user, profile } = await getAuthenticatedProfile();
 
   let professional:
@@ -39,7 +39,7 @@ export default async function AccountPage({
         </form>
       </div>
 
-      {error ? <div className="formAlert" role="alert">{error}</div> : null}
+      {error ? <div className="formAlert" role="alert">{error}</div> : null}\n      {job_posted ? <div className="formSuccess">Job posted successfully. Verified professionals can now see it in the opportunities feed.</div> : null}
 
       {profile.role === "professional" ? (
         <div className="dashboardLayout">
