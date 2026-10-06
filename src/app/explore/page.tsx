@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { categories, naira, professionals } from "@/lib/demo-data";
+import { naira, professionals } from "@/lib/demo-data";\nimport { getServiceCategories } from "@/lib/data/categories";
 
 export default function ExplorePage() {
   return (
